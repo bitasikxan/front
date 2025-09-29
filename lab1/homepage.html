@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Сервісний центр "YOLO"
+            <img src="https://img.icons8.com/ios-filled/service" alt="Логотип" width="50" height="50"/></h1>
+        <nav>
+            <ul style="list-style-type: none; display: flex; gap: 10px; justify-content: right;">
+                <li><button onclick="location.href='catalogue.html'">Каталог сервісів</button></li>
+                <!--другий пункт - без посилання-->
+                <li><button>Відгуки про сервіси</button></li>
+                <li><button onclick="location.href='#feedback'">Зворотній зв'язок</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Ласкаво просимо до сайту сервісного центру "YOLO"!</h2>
+        <p>Цей сайт є посередником між нашими фахівцями та нашими клієнтами. Він містить в собі:</p>
+        <ol type="I" style="display: flex; flex-direction: column; padding-left: 50px;">
+            <li><a href="catalogue.html">Каталог актуальних сервісів.</a></li>
+            <li><a href="#comments">Список відгуків наших клієнтів.</a></li>
+            <li><a href="feedback.html">Інтерфейс для зворотного зв’язку з нами.</a></li>
+        </ol>
+    <!-- артікл - типи сервісів у вигляді таблиці -->
+    <article id="service">
+        <table border="1" style="width: 100%; text-align: right;">
+        <caption><span style="color: rgb(255, 0, 0);">Основні</span> сервіси з обслуговування та ремонту авто</caption>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Назва сервісу</th>
+                <th>Опис</th>
+                <th>Час виконання</th>
+                <th>Орієнтовна вартість</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>I</td>
+                <td>Технічне обслуговування</td>
+                <td rowspan="2">Регулярні роботи для підтримки працездатності авто</td>
+                <td>1-2 години</td>
+                <td>Від <i>1500</i> грн</td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td>Діагностика автомобіля</td>
+                <td>+-1 година</td>
+                <td>Від <i>800</i> грн</td>
+            </tr>
+            <tr>
+                <td>III</td>
+                <td>Ремонт двигуна та трансмісії</td>
+                <td>Відновлення та ремонт найважливіших деталей</td>
+                <td>Від 1 дня</td>
+                <td>Від <i>5000</i> грн (<b>індивідуально</b>)</td>
+            </tr>
+            <tr>
+                <td>IV</td>
+                <td>Кузовні та малярні роботи</td>
+                <td>Ремонт кузова після ДТП, фарбування, нанесення аерозольних візерунків</td>
+                <td>2-5 днів</td>
+                <td>Від <i>7000</i> грн</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>Шиномонтаж та балансування</td>
+                <td>Обслуговування коліс авто</td>
+                <td>30-60 хв</td>
+                <td>Від <i>500</i> грн</td>
+            </tr>
+            <tr>
+                <td>VI</td>
+                <td>Електроніка</td>
+                <td>Ремонт, діагностика, заміна електросистем автомобіля</td>
+                <td>Від 2 годин</td>
+                <td>Від <i>1200</i> грн</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+            <td colspan="5" style="text-align: left"><em>Зверніть увагу!</em> Вартість та час виконання залежать від <u>моделі авто та складності робіт</u></td>
+            </tr>
+        </tfoot>
+        </table>
+
+    </article>
+    <aside>
+        <ul style="list-style-type: none; display: flex; gap: 1cm; justify-content: center; padding: 0;">
+            <li><button style="color: rgb(0, 77, 0);">Персональний кабінет</button></li>
+            <li><button style="color: rgb(77, 0, 0);">Зареєструватись</button></li>
+            <li><button style="color: rgb(0, 0, 77);">Залишити відгук</button></li>
+        </ul>
+        <p id = "feedback">42744 м. Київ, вул. Юлії Здановської, 55.<br>Контактний телефон: +380663362522.</p>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Сервісний центр "YOLO". Всі права захищені.</p>
+    </footer>
+</body>
+</html>

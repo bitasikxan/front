@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <main>
+        <h2 style="text-align: center;">Зворотній зв'язок</h2>
+            <p style="text-align: center;">Будь ласка, заповніть форму нижче, щоб зв'язатися з нами. Ми цінуємо вашу думку та завжди раді допомогти!</p>
+        <form action="#" method="post" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <fieldset style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+                <legend>Персональна інформація</legend>
+
+                <label for="name">Ваше ім'я та прізвище:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required placeholder="@gmail.com">
+
+                <label for="age">Ваш вік:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+            </fieldset>
+
+            <label for="theme">Тема звернення:</label>   
+            <select name="theme" id="theme" required>
+                <option value="collaboration">Співпраця</option>
+                <option value="arguement">Скарга</option>
+                <option value="offer">Пропозиція</option>
+                <option value="error">Наявність помилки на сайті</option>
+            </select>
+
+            <label for="message">Ваше повідомлення (максимум 300 символів):</label>
+            <textarea id="message" name="message" rows="4" cols="50" maxlength="300" required placeholder="Що вас бентежить?"></textarea>
+            
+            <checkbox>
+                <label for="agreement">Надаю згоду на обробку наданої мною інформації</label>
+                <input type="checkbox" id="agreement" name="agreement" required>
+            </checkbox>
+
+            <button type="submit">Відправити</button>
+        </form>
+        <footer style="margin-top: 100px;">
+            <button onclick="location.href='homepage.html'">На головну</button>
+            <p>&copy; 2024 Сервісний центр "YOLO". Всі права захищені.</p>
+        </footer>
+    </main>
+</body>
+</html>
