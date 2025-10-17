@@ -5,7 +5,6 @@ body {
     padding-top: 20px;
     margin: 40px;
     background-color: #ffffff;
-    z-index: 1;
 }
 /* Стилі для заголовка */
 #logo {
@@ -15,6 +14,7 @@ body {
     bottom: 0;
     margin: 0;
     padding: 0;
+    z-index: -1;
 }
 
 

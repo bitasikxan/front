@@ -83,4 +83,5 @@ button {
 /* Замість посилання - кнопка */
 button:active {
     color: darkgreen;
+    border-color: darkgreen;
 }
