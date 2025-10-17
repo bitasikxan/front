@@ -8,6 +8,7 @@ main {
     margin-top: 100px;
     padding: 0;
 }
+
 /* Стилі для заголовка */
 header h1{
     position: absolute;
@@ -16,6 +17,7 @@ header h1{
     bottom: 0;
     margin: 0;
     padding: 0;
+    z-index: -1;
 }
 
 /* Стилі для основного вмісту */
@@ -35,10 +37,16 @@ article ul {
     justify-content: center;
 }
 
-article ul li img:hover,
-article ul li img:focus {
+article ul li img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    text-align: center;
+    transition: 0.0s;
+}
+
+article ul li img:hover {
     filter: grayscale(100%);
-    transition: transform 2.0s;
 }
 
 /* Замість "тип тканини для пошиття" використав ці заголовки */
