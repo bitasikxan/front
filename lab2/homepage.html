@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage_style.css">
     <title>Main Page</title>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center;">Сервісний центр "YOLO"
+        <h1 id="logo">Сервісний центр "YOLO"
             <img src="https://img.icons8.com/ios-filled/service" alt="Логотип" width="50" height="50"/></h1>
         <nav>
-            <ul style="list-style-type: none; display: flex; gap: 10px; justify-content: right;">
+            <ul>
                 <li><button onclick="location.href='catalogue.html'">Каталог сервісів</button></li>
                 <!--другий пункт - без посилання-->
                 <li><button>Відгуки про сервіси</button></li>
@@ -21,7 +22,7 @@
     <main>
         <h2>Ласкаво просимо до сайту сервісного центру "YOLO"!</h2>
         <p>Цей сайт є посередником між нашими фахівцями та нашими клієнтами. Він містить в собі:</p>
-        <ol type="I" style="display: flex; flex-direction: column; padding-left: 50px;">
+        <ol>
             <li><a href="catalogue.html">Каталог актуальних сервісів.</a></li>
             <li><a href="#comments">Список відгуків наших клієнтів.</a></li>
             <li><a href="feedback.html">Інтерфейс для зворотного зв’язку з нами.</a></li>
@@ -30,7 +31,7 @@
     </main>
     <!-- артікл - типи сервісів у вигляді таблиці -->
     <article id="service">
-        <table border="1" style="width: 100%; text-align: right;">
+        <table border="1">
         <caption><span style="color: rgb(255, 0, 0);">Основні</span> сервіси з обслуговування та ремонту авто</caption>
         <thead>
             <tr>
@@ -95,12 +96,12 @@
 
     </article>
     <aside>
-        <ul style="list-style-type: none; display: flex; gap: 1cm; justify-content: center; padding: 0;">
-            <li><button style="color: rgb(0, 77, 0);">Персональний кабінет</button></li>
+        <ul>
+            <li><button style="color: hex(#004D00);">Персональний кабінет</button></li>
             <li><button style="color: rgb(77, 0, 0);">Зареєструватись</button></li>
-            <li><button style="color: rgb(0, 0, 77);">Залишити відгук</button></li>
+            <li><button style="color: hsl(240, 100%, 15%)">Залишити відгук</button></li>
         </ul>
-        <p id = "feedback">42744 м. Київ, вул. Юлії Здановської, 55.<br>Контактний телефон: +380663362522.</p>
+        <p class = "address" id = "feedback">42744 м. Київ, вул. Юлії Здановської, 55.<br>Контактний телефон: +380663362522.</p>
     </aside>
     <footer>
         <p>&copy; 2025 Сервісний центр "YOLO". Всі права захищені.</p>

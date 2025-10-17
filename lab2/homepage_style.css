@@ -1,0 +1,85 @@
+/* Загальні стилі для сторінки */
+body {
+    display: grid;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    margin: 40px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+/* Стилі для заголовка */
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-content: right;
+}
+
+main {
+    display: grid;
+    margin: 5px;
+    padding: 0;
+}
+
+main p::before {
+    content: "🛠️";
+    display: inline;
+    background-color:cornflowerblue;
+}
+
+/* Стилі для основного вмісту */
+main ol {
+    display: grid;
+    grid-auto-flow: row;
+    padding-left: 50px;
+}
+
+article {
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* Стилі для таблиці */
+article table {
+    display: table;
+    width: 100%;
+    min-width: 1050px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+article table:hover{
+    transform: translateY(2vh);
+}
+
+
+/* Стилі для бокової панелі */
+aside ul {
+    display: grid;
+    column-gap: 1cm;
+    grid-auto-flow: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.address {
+    text-align: left;
+    display: inline-block;
+}
+
+.address:hover  {
+    transition: 0.3s ease 2.0s;
+    scale: 120%; 
+}
